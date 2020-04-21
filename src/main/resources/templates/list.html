@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>1111</h1>
+    <div th:text="${list[1]}" ></div>
+    <h2>success</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>用户名</th>
+
+        </tr>
+        <tr th:each="list:${list}">
+            <td th:text="${list[0]}"></td>
+            <td th:text="${list[1]}"></td>
+
+        </tr>
+        </thead>
+
+
+
+    </table>
+</body>
+</html>
